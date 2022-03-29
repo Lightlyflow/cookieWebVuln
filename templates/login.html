@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %} Login {% endblock %}
+{% block body %}
+    <h1>Login Page</h1>
+    {% if admin == "False" %}
+        <p>You are <b>NOT</b> admin!</p>
+    {% elif admin == "True" %}
+        <p>Congrats! You are admin! Here's a <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">reward</a>!</p>
+    {% endif %}
+{% endblock %}

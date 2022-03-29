@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vulnerable Website - {% block title %}{% endblock %}</title>
+    <!--  Navigation bar  -->
+    <ul style="list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#333;">
+        <li style="float:left;"><a style="display:block;color:white;text-align:center;padding:14px;text-decoration:none;" href="/">Home</a></li>
+        <li style="float:left;"><a style="display:block;color:white;text-align:center;padding:14px;text-decoration:none;" href="/login">Login</a></li>
+    </ul>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+<footer>
+</footer>
+</html>
