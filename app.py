@@ -18,5 +18,12 @@ def login():
     return render_template("login.html", admin=isAdmin)
 
 
+@app.route("/reset")
+def reset():
+    response = make_response(render_template("index.html"))
+    response.set_cookie("admin", "False")
+    return response
+
+
 if __name__ == '__main__':
     app.run()
